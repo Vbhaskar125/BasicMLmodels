@@ -11,7 +11,6 @@ from sklearn.utils import shuffle
 path="day.csv"
 dataset=pd.read_csv(path)
 costHistory=[]
-#dataset.drop(dataset["instant"])
 dataset=dataset.drop(['instant','dteday','casual','registered','yr'],axis=1)
 
 #factors being used are season, mnth,holiday,workingday, weathersit, temp, atemp, hum, windspeed, cnt
